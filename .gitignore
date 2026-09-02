@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Temporary downloads and extraction caches
+temp_pgsql/
+*.zip
+
+# Build / Distribution
+build/
+dist/
+*.egg-info/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Editor directories
+.vscode/
+.idea/
+
+# Explicitly ensure bundled dependencies and directories are tracked
+!bundle/
+!vendor/
+!wheels/
+!wheels/*.whl
