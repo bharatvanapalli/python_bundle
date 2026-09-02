@@ -28,3 +28,4 @@ ENV/
 !vendor/
 !wheels/
 !wheels/*.whl
+!node_modules/

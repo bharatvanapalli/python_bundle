@@ -1,0 +1,10 @@
+{
+  "name": "python_bundle",
+  "version": "1.0.0",
+  "description": "Offline automation bundle for pipeline sanity checks and MCP SDK",
+  "main": "alloydb_query_example.js",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.1"
+  }
+}
