@@ -27,12 +27,15 @@ Write-Host "========================================="
 Write-Host "1. PostgreSQL Client (psql):"
 & "$bundleDir\bin\psql.exe" --version
 
-Write-Host "2. Cloud SQL Proxy:"
+Write-Host "`n2. Cloud SQL Proxy:"
 & "$bundleDir\bin\cloud-sql-proxy.exe" --version
 
-Write-Host "3. Python & Drivers:"
-& "$bundleDir\python\python.exe" -c "import psycopg2, openpyxl; print('psycopg2:', psycopg2.__version__); print('openpyxl:', openpyxl.__version__)"
+Write-Host "`n3. Python Word & Excel Tools:"
+& "$bundleDir\python\python.exe" -c "import psycopg2, openpyxl, docx, xlsxwriter; print('  psycopg2:   ', psycopg2.__version__); print('  openpyxl:   ', openpyxl.__version__); print('  python-docx:', docx.__version__); print('  xlsxwriter: ', xlsxwriter.__version__)"
+
+Write-Host "`n4. Node.js Document & MCP Libraries:"
+node "$scriptDir\test_office_tools.js"
 
 Write-Host "========================================="
-Write-Host " All tools verified and ready!"
+Write-Host " All tools verified and ready for AI use!"
 Write-Host "========================================="

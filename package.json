@@ -1,10 +1,20 @@
 {
   "name": "python_bundle",
   "version": "1.0.0",
-  "description": "Offline automation bundle for pipeline sanity checks and MCP SDK",
+  "description": "Offline automation bundle for pipeline sanity checks, MCP SDK, and Word/Excel document generation",
   "main": "alloydb_query_example.js",
   "type": "module",
+  "scripts": {
+    "test:tools": "node test_office_tools.js",
+    "test:mcp": "node -e \"import('./gcp-mcp-server.js')\"",
+    "create:doc": "node create_word_document.js",
+    "create:excel": "node create_excel_document.js"
+  },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.6.1"
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "docx": "^9.7.1",
+    "exceljs": "^4.4.0",
+    "mammoth": "^1.12.2",
+    "xlsx": "^0.18.5"
   }
 }
